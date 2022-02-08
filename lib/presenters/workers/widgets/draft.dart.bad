@@ -1,0 +1,314 @@
+              Expanded(
+                flex: 5,
+                child: SingleChildScrollView(
+
+
+                   Positioned(
+                          top: 400,
+                          left: 50,
+                          child: InkWell(
+                            onTap: (){print('ok');},
+                            child: Container(
+                              width: 78,
+                              height: 78,
+                              decoration: BoxDecoration(
+                                color: Colors.blue
+                              ),
+                            ),
+                          ),
+                        )
+
+
+                  child: Stack(
+                    clipBehavior: Clip.none,
+                    children: [
+                      DashBoard(),
+                      Positioned(
+                        //top: 69,
+                        //left: 20,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 20,right: 30),
+                          child: Row(
+                            children: [
+                              Flexible(
+                                flex:2,
+                                child: Visibility(
+                                  visible: false,
+                                  child: Container(
+                                    margin: EdgeInsets.only(top:66,right: 20),
+                                    //padding: EdgeInsets.only(right: 70),
+                                    decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.only(
+                                            bottomLeft: Radius.circular(10),
+                                            bottomRight: Radius.circular(10))),
+                                    child: Column(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                              left: 20, right: 20, top: 8, bottom: 8),
+                                          child: Divider(
+                                            color: Colors.red,
+                                            thickness: 1,
+                                            height: 1,
+                                          ),
+                                        ),
+                                        DrawList(
+                                          hoverColor: indigoColor,
+                                          title: "Je recherche ...",
+                                          color: Colors.grey,
+                                          iconButton: Icons.local_offer_outlined,
+                                          listTitleColor: Colors.grey,
+                                          svgHeight: 25,
+                                          onButtonPressed: () {},
+                                          textStyle: bMenuTextStyleSearch,
+                                          //=> selectedItem(context,3),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.only(left: 35),
+                                          child: Row(
+                                            children: [
+                                              CustormButton(
+                                                  onButtonPressed: () {},
+                                                  buttonTitle: "Fichiers",
+                                                  colorButton: Colors.grey,
+                                                  styleTextButon: bTagButton,
+                                                  iconButton: Icons.layers_sharp,
+                                                  sizeIconButton: 20,
+                                                  iconButtonColor: Colors.white,
+                                                  horizontalPaddingButton: 7,
+                                                  verticalPaddingButton: 10),
+                                              CustormButton(
+                                                  onButtonPressed: () {},
+                                                  buttonTitle: "Ouvriers",
+                                                  colorButton: Colors.grey,
+                                                  styleTextButon: bTagButton,
+                                                  iconButton: Icons.person,
+                                                  sizeIconButton: 20,
+                                                  iconButtonColor: Colors.white,
+                                                  horizontalPaddingButton: 7,
+                                                  verticalPaddingButton: 10),
+                                              CustormButton(
+                                                  onButtonPressed: () {
+                                                    print("ooook");
+                                                  },
+                                                  buttonTitle: "Dépenses",
+                                                  colorButton: Colors.grey,
+                                                  styleTextButon: bTagButton,
+                                                  iconButton: Icons.minimize,
+                                                  sizeIconButton: 20,
+                                                  iconButtonColor: Colors.white,
+                                                  horizontalPaddingButton: 7,
+                                                  verticalPaddingButton: 10),
+                                            ],
+                                          ),
+                                        ),
+                                        DrawList(
+                                            hoverColor: indigoColor,
+                                            extension: "svg",
+                                            title: "Ouvries",
+                                            color: Colors.grey,
+                                            svgSrc: SvgIconsSource.userProfilSvgIcon,
+                                            svgHeight: 25,
+                                            listTitleColor: Colors.grey,
+                                            onButtonPressed: () {}
+                                            //=> selectedItem(context,2),
+                                            ),
+                                        Container(
+                                            child: Column(
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 20, top: 20),
+                                              child: FittedBox(
+                                                child: Row(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    ProfilWidget(
+                                                      styleProfil: bProfilTextStyle,
+                                                      imageWidth: 40,
+                                                      imageheight: 40,
+                                                      colorContainer:
+                                                          Colors.transparent,
+                                                      borderWidth: 0,
+                                                      borderStyle: BorderStyle.none,
+                                                      spaceBetweenPictureAndTitle: 20,
+                                                      pathImageUser:
+                                                          SvgIconsSource.userImage1,
+                                                      userName:
+                                                          "blacko ramazanigjhgef",
+                                                    ),
+                                                    ProfilWidget(
+                                                      styleProfil: bProfilTextStyle,
+                                                        imageWidth: 40,
+                                                        imageheight: 40,
+                                                        colorContainer:
+                                                            Colors.transparent,
+                                                        borderWidth: 0,
+                                                        borderStyle: BorderStyle.none,
+                                                        spaceBetweenPictureAndTitle:
+                                                            20,
+                                                        pathImageUser:
+                                                            SvgIconsSource.userImage2,
+                                                        userName:
+                                                            "Rodolpho Sanchesedfjbjhbh"),
+                                                    ProfilWidget(
+                                                      styleProfil: bProfilTextStyle,
+                                                        imageWidth: 40,
+                                                        imageheight: 40,
+                                                        colorContainer:
+                                                            Colors.transparent,
+                                                        borderWidth: 0,
+                                                        borderStyle: BorderStyle.none,
+                                                        spaceBetweenPictureAndTitle:
+                                                            20,
+                                                        pathImageUser:
+                                                            SvgIconsSource.userImage3,
+                                                        userName: "Asalfojbkjbd"),
+                                                    ProfilWidget(
+                                                      styleProfil: bProfilTextStyle,
+                                                        imageWidth: 40,
+                                                        imageheight: 40,
+                                                        colorContainer:
+                                                            Colors.transparent,
+                                                        borderWidth: 0,
+                                                        borderStyle: BorderStyle.none,
+                                                        spaceBetweenPictureAndTitle:
+                                                            20,
+                                                        pathImageUser:
+                                                            SvgIconsSource.userImage4,
+                                                        userName:
+                                                            "Rodolphe GBEETOvkjdvbkjbjk"),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  left: 20, top: 20),
+                                              child: FittedBox(
+                                                child: Row(
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.start,
+                                                  children: [
+                                                    ProfilWidget(
+                                                      styleProfil: bProfilTextStyle,
+                                                        imageWidth: 40,
+                                                        imageheight: 40,
+                                                        colorContainer:
+                                                            Colors.transparent,
+                                                        borderWidth: 0,
+                                                        borderStyle: BorderStyle.none,
+                                                        spaceBetweenPictureAndTitle:
+                                                            20,
+                                                        pathImageUser:
+                                                            SvgIconsSource.userImage4,
+                                                        userName:
+                                                            "Rodolphe GBEETOvkjdvbkjbjk"),
+                                                    ProfilWidget(
+                                                      styleProfil: bProfilTextStyle,
+                                                      imageWidth: 40,
+                                                      imageheight: 40,
+                                                      colorContainer:
+                                                          Colors.transparent,
+                                                      borderWidth: 0,
+                                                      borderStyle: BorderStyle.none,
+                                                      spaceBetweenPictureAndTitle: 20,
+                                                      pathImageUser:
+                                                          SvgIconsSource.userImage7,
+                                                      userName:
+                                                          "blacko ramazanigjhgef",
+                                                    ),
+                                                    ProfilWidget(
+                                                        imageWidth: 40,
+                                                        imageheight: 40,
+                                                        colorContainer:
+                                                            Colors.transparent,
+                                                        borderWidth: 0,
+                                                        borderStyle: BorderStyle.none,
+                                                        styleProfil: bProfilTextStyle,
+                                                        spaceBetweenPictureAndTitle:
+                                                            20,
+                                                        pathImageUser:
+                                                            SvgIconsSource.userImage2,
+                                                        userName:
+                                                            "Rodolpho Sanchesedfjbjhbh"),
+                                                    ProfilWidget(
+                                                      styleProfil: bProfilTextStyle,
+                                                        imageWidth: 40,
+                                                        imageheight: 40,
+                                                        colorContainer:
+                                                            Colors.transparent,
+                                                        borderWidth: 0,
+                                                        borderStyle: BorderStyle.none,
+                                                        spaceBetweenPictureAndTitle:
+                                                            20,
+                                                        pathImageUser:
+                                                            SvgIconsSource.userImage8,
+                                                        userName: "Asalfojbkjbd"),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                            InkWell(
+                                              onTap: () {},
+                                              child: Padding(
+                                                padding:
+                                                    const EdgeInsets.only(top: 50),
+                                                child: Center(
+                                                    child: Text(
+                                                        "voir plus (96 autres contacts)",
+                                                        style:
+                                                            bTextInfoItemBottomSearchCard)),
+                                              ),
+                                            ),
+                                          ],
+                                        ))
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
+                             
+                              CustormButton(
+                                        onButtonPressed: (){},
+                                        buttonTitle: "Importer",
+                                        colorButton: Colors.transparent,
+                                        styleTextButon: bTitleButtonTransparent,
+                                        iconButton: Icons.cloud_upload_outlined,
+                                        sizeIconButton: 30,
+                                        iconButtonColor: Colors.transparent,
+                                      ),
+          CustormButton(
+            onButtonPressed: (){},
+            buttonTitle: "Imprimer",
+            colorButton: Colors.transparent,
+            styleTextButon: bTitleButtonTransparent,
+            iconButton: Icons.print_rounded,
+            sizeIconButton: 30,
+            iconButtonColor: Colors.transparent,
+          ),
+          ProfilWidget(
+            borderStyle: BorderStyle.none,
+            colorContainer: Colors.transparent,
+            pathImageUser: SvgIconsSource.userImage11,
+            imageWidth: 73,
+            imageheight: 50,
+            borderWidth: 0,
+            styleProfil: bProfilTextStyleTransparent,
+            
+
+            //iconButton: Icons.keyboard_arrow_down,
+          )
+                              
+                             
+                            ],
+                          ),
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),
+              ),

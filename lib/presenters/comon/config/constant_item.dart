@@ -1,0 +1,18 @@
+class ConfigMenuItem{
+
+}
+
+enum MenuItemSelect {
+  HOME,
+  ADDWORKER,
+  DASHBOARD,
+  WORKESITE,
+  ADDWORKESITE,
+  ADDEXPENSE,
+  PAYE,
+  ADDHOURWORKER,
+  INVOICE,
+  LOGOUT,
+  LIGHT
+
+}
